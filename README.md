@@ -21,7 +21,7 @@ When you are finished, submit a pull request. If there is any configuration that
 Here is JSON string that contains the 12 main points of the book:
 
 
-
+```json
     {
     "1":{
         "title":"Life Long Commitment",
@@ -83,7 +83,7 @@ Here is JSON string that contains the 12 main points of the book:
         "summary":"Connecting regularly with like-minded couples who are committed to the good of your relationship is vital to the success of your marriage."
     }
     }
-
+```
     # Contents:
 
     This pull request contains instructions on setting up your environment to run the application locally as well as instruction on seeding the database.
@@ -214,7 +214,3 @@ Here is JSON string that contains the 12 main points of the book:
     username: user
     password: supersecret
     ```
-
-
-
-      
