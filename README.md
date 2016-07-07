@@ -84,133 +84,134 @@ Here is JSON string that contains the 12 main points of the book:
     }
     }
 ```
-    # Contents:
 
-    This pull request contains instructions on setting up your environment to run the application locally as well as instruction on seeding the database.
+# Contents:
 
-    ## Setup Environment for Mac OS X
+This pull request contains instructions on setting up your environment to run the application locally as well as instruction on seeding the database.
 
-    ** If you already installed RVM and Ruby, then skip to `Install Ruby 2.3.0` **
+## Setup Environment for Mac OS X
 
-    -  Install [Ruby Version Manager](https://rvm.io/) (RVM)
-    -   Check to see if you already have GCC installed by typing the following at the command prompt:
-    ```shell
-    gcc --version
-    ```
-    If you see a version number, then you're good to go. If the `gcc` command isn't found, you may get a dialog asking if you'd like to install Apple's Command Line Tools for Xcode. Follow the prompts to "Install" the Command Line Tools.
-    - Check to see that you have git installed with
-    ```shell
-    git --version
-    ```
-    If you see a version number, then you have finished step 3. If not, try this link to install git: [git-osx-installer](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
-    -  Install RVM by typing in the Terminal prompt:
-    ```shell
-    curl -L https://get.rvm.io | bash -s stable
-    ```
-    -  Confirm proper loading, open a new Terminal session and type:
-    ```shell
-    rvm --version
-    ```
-    There should be a version number with no errors.
-    -  Install Ruby 2.3.0, type:
-    ```shell
-    rvm install 2.3.0
-    ```
-    -  Close your Terminal session and open a new Terminal:
-    ```shell
-    rvm --default use 2.3.0
-    ```
-    -  Verify Ruby 2.3.0 by typing:
-    ```shell
-    ruby -v
-    ```
-    you should see something similar too:
-    ```shell
-    ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin15]
-    ```
-    -  Install Rails:
-    ```shell
-    gem install rails --version 4.9.1 --no-ri --no-rdoc
-    ```
-    -  Verify correct Rails version, type:
-    ```shell
-    rails -v
-    ```
-    and it should return:
-    ```shell
-    Rails 4.1.9
-    ```
+** If you already installed RVM and Ruby, then skip to `Install Ruby 2.3.0` **
 
-    ## Setup Environment for Windows
+-  Install [Ruby Version Manager](https://rvm.io/) (RVM)
+-   Check to see if you already have GCC installed by typing the following at the command prompt:
+```shell
+gcc --version
+```
+If you see a version number, then you're good to go. If the `gcc` command isn't found, you may get a dialog asking if you'd like to install Apple's Command Line Tools for Xcode. Follow the prompts to "Install" the Command Line Tools.
+- Check to see that you have git installed with
+```shell
+git --version
+```
+If you see a version number, then you have finished step 3. If not, try this link to install git: [git-osx-installer](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
+-  Install RVM by typing in the Terminal prompt:
+```shell
+curl -L https://get.rvm.io | bash -s stable
+```
+-  Confirm proper loading, open a new Terminal session and type:
+```shell
+rvm --version
+```
+There should be a version number with no errors.
+-  Install Ruby 2.3.0, type:
+```shell
+rvm install 2.3.0
+```
+-  Close your Terminal session and open a new Terminal:
+```shell
+rvm --default use 2.3.0
+```
+-  Verify Ruby 2.3.0 by typing:
+```shell
+ruby -v
+```
+you should see something similar too:
+```shell
+ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-darwin15]
+```
+-  Install Rails:
+```shell
+gem install rails --version 4.9.1 --no-ri --no-rdoc
+```
+-  Verify correct Rails version, type:
+```shell
+rails -v
+```
+and it should return:
+```shell
+Rails 4.1.9
+```
 
-    To install Ruby, Rails, and other supporting software on Windows use the [RailsInstaller](http://railsinstaller.org/)
+## Setup Environment for Windows
 
-    -  On the [RailsInstaller](http://railsinstaller.org/), click the big green "Windows Ruby 2.2" button to download the installer.
-    -  Once the executable installer has downloaded, use _Windows Explorer_ to navigate to where you saved the **.exe** file and double-click it to start the installation process.
-    -  After stepping through a couple standard installer screens, you'll be prompted for the installation destination. By default, RailsInstaller will be installed in your **C:\RailsInstaller** directory. We'll assume you go with the default destination.
-    -  When the installation is complete, a command prompt window will open and prompt for your name and email. Then you'll end up in the **C:\Sites** directory. You should see a window with a blinking cursor and a prompt that looks something like this:
-    ```shell
-    C:\Sites>
-    ```
-    -  Open a new command prompt by selecting the _Start_ menu, typing **cmd** into the search box, and pressing **Enter**. You should see a new command window with a blinking cursor and a prompt that looks something like this:
-    ```shell
-    C:\Users\Tim>
-    ```
-    -  Verify that Ruby 2.1 was successfully installed by typing
-    ```shell
-    ruby -v
-    ```
-    Ruby should reply with something like this, though your exact patch number, date, and revision may be slightly different:
-    ```shell
-    ruby 2.2.4p230 (2015-12-16 revision 53160) [i386-mingw32]
-    ```
-    -  Next, install Rails 4.9.1 by typing:
-    ```shell
-    gem install rails --version 4.9.1 --no-ri --no-rdoc
-    ```
-    -  Verify Rails version:
-    ```shell
-    rails -v
-    ```
-    Rails should reply with
-    ```shell
-    Rails 4.9.1
-    ```
+To install Ruby, Rails, and other supporting software on Windows use the [RailsInstaller](http://railsinstaller.org/)
 
-    ## Bundling and seeding data
+-  On the [RailsInstaller](http://railsinstaller.org/), click the big green "Windows Ruby 2.2" button to download the installer.
+-  Once the executable installer has downloaded, use _Windows Explorer_ to navigate to where you saved the **.exe** file and double-click it to start the installation process.
+-  After stepping through a couple standard installer screens, you'll be prompted for the installation destination. By default, RailsInstaller will be installed in your **C:\RailsInstaller** directory. We'll assume you go with the default destination.
+-  When the installation is complete, a command prompt window will open and prompt for your name and email. Then you'll end up in the **C:\Sites** directory. You should see a window with a blinking cursor and a prompt that looks something like this:
+```shell
+C:\Sites>
+```
+-  Open a new command prompt by selecting the _Start_ menu, typing **cmd** into the search box, and pressing **Enter**. You should see a new command window with a blinking cursor and a prompt that looks something like this:
+```shell
+C:\Users\Tim>
+```
+-  Verify that Ruby 2.1 was successfully installed by typing
+```shell
+ruby -v
+```
+Ruby should reply with something like this, though your exact patch number, date, and revision may be slightly different:
+```shell
+ruby 2.2.4p230 (2015-12-16 revision 53160) [i386-mingw32]
+```
+-  Next, install Rails 4.9.1 by typing:
+```shell
+gem install rails --version 4.9.1 --no-ri --no-rdoc
+```
+-  Verify Rails version:
+```shell
+rails -v
+```
+Rails should reply with
+```shell
+Rails 4.9.1
+```
 
-    -  After installing environment, type:
-    ```shell
-    bundle install
-    ```
-    -  Next load the JSON data (the book chapters found at `db/ready_to_wed.json`):
-    ```shell
-    rake db:setup
-    ```
+## Bundling and seeding data
 
-    ## Run testing suite
+-  After installing environment, type:
+```shell
+bundle install
+```
+-  Next load the JSON data (the book chapters found at `db/ready_to_wed.json`):
+```shell
+rake db:setup
+```
 
-    -  Specs should all be green but check with:
-    ```shell
-    bundle exec rspec
-    ```
+## Run testing suite
 
-    ## Run on localhost
+-  Specs should all be green but check with:
+```shell
+bundle exec rspec
+```
 
-    -  Spinning up localhost is default to 3000:
-    ```shell
-    rails s
-    ```
+## Run on localhost
 
-    ## Admin login or User login
+-  Spinning up localhost is default to 3000:
+```shell
+rails s
+```
 
-    -  Admin can create, edit, or delete the chapter's number, title, and content. After clicking `Sign In` in the navigation header, then use the following username and password:
-    ```ruby
-    username: admin
-    password: supersecret
-    ```
-    For a regular User (no CRUD abilities for Book Chapters):
-    ```ruby
-    username: user
-    password: supersecret
-    ```
+## Admin login or User login
+
+-  Admin can create, edit, or delete the chapter's number, title, and content. After clicking `Sign In` in the navigation header, then use the following username and password:
+```ruby
+username: admin
+password: supersecret
+```
+For a regular User (no CRUD abilities for Book Chapters):
+```ruby
+username: user
+password: supersecret
+```
