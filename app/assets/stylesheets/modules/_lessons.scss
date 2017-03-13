@@ -1,4 +1,4 @@
-section#home {
+div#home {
   position: relative;
   min-height: 31.25em;
   height: auto !important;
@@ -8,7 +8,7 @@ section#home {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  border: 11px solid $sand-of-love-color;
+  border: 5px solid $sand-of-love-color;
   border-radius: em(15px);
   text-align: center;
 }
