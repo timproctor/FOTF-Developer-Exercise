@@ -19,8 +19,9 @@ describe "Viewing a user's profile page" do
     sign_in(user)
 
     visit user_url(user)
+    time_now_month_year = Time.now.strftime("%B, %Y")
 
-    expect(page).to have_text("June, 2016")
+    expect(page).to have_text(time_now_month_year)
   end
 
 
