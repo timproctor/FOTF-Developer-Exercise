@@ -1,6 +1,6 @@
-##Business Problem to Solve##
+## Business Problem to Solve
 The ministry needs a new website for a book that the ministry wants to create curriculum for. The name of this book is "Ready to Wed", and it's written by Greg and Erin Smalley. You can find out a little bit about this book by looking at http://www.amazon.com/Ready-Wed-Start-Marriage-Youll/dp/1624054064/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=.
-##Requirements##
+# Requirements
 The work needs to provide the following:
 
 - The site needs to present the information in a mobile and desktop friendly way.
@@ -11,13 +11,13 @@ The work needs to provide the following:
 - Your work should showcase your understanding of TDD and unit testing.
 - The project should include instructions for running the website on a local environment.
 
-###Bonus###
+## Bonus
 It would be really great if you can make the site incorporate some sort of administration interface that allows an administrative user to edit the 12 main points of the book.
 
-##Delivery##
+## Delivery
 When you are finished, submit a pull request. If there is any configuration that needs to be done, please note that in your pull request.
 
-##Appendix##
+## Appendix
 Here is JSON string that contains the 12 main points of the book:
 
 
